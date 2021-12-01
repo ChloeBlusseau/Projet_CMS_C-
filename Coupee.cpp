@@ -1,20 +1,23 @@
 #include "chassis.h"
-#include "dimensions.h"
 
 
 
-float get_aerodynamisme(); //aerodynamisme d'une voiture coupee 
+float Coupee::get_aerodynamisme() //aerodynamisme d'une voiture coupee 
 {
-	return 0.03 * dimensions.longueur * dimensions.largeur * dimensions.hauteur ;	
+	return cx;
 }
 
-void Coupee::Coupee(int nombre_portes, int cylindree, bool luxe)
+void Coupee::Coupee()
 {
-	int Chassis::nombre_portes = nombre_portes;
-	int Chassis::cylindree = cylindree;
-	bool Chassis::luxe = luxe;
-	float Chassis::longueur = 4.6;
-	float Chassis::largeur = 2.2;
-	float Chassis::hauteur = 1.3;
-	float Chassis::longueur_de_toit = 0 ;
+	nombre_portes = nbportes;
+	cx = coeffaero;
+	luxe = option_luxe;
+	longueur = 4.6;
+	largeur = 2.2;
+	hauteur = 1.3;
+	longueur_de_toit = 0 ;
+	prix_chassis += 2000;
+	cx = 0.03 * longueur * largeur * hauteur ;
 }
+
+

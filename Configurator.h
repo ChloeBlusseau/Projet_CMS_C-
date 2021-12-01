@@ -6,7 +6,7 @@ class Configurator{
 	public : 
 		void configurer();
 		void afficher();
-}
+};
 
 
 

@@ -2,7 +2,6 @@
 #include "chassis.h"
 
 
-
 void configurer()
 {
 	/*Afficher : 
@@ -27,7 +26,7 @@ void configurer()
 
 
 
-void afficher();
+void afficher()
 {
 /*but : afficher 
 __________________
